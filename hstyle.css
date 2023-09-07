@@ -1,0 +1,221 @@
+:root{
+  --violet01:#af00e4;
+  --orange01:#ce7604;
+  --backcolor02: #333744;
+  --bkaltura:200px;
+}
+*{
+  box-sizing: border-box;
+}
+
+.now{
+  width: 90%;
+  max-width: 1200px;
+  margin: 5em auto 1em auto;
+}
+
+
+
+/*LENGUAJES*/
+.hcontenedor{
+  /*border: solid 1px red;*/
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.btn-25{
+  display: inline-flex;
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  border-radius: 6px 0 0 6px;
+  background: var(--violet01);
+  opacity: 0.5;
+  left: 0;
+}
+.btn-50{
+  display: inline-flex;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  border-radius: 6px 0 0 6px;
+  background: var(--violet01);
+  opacity: 0.5;
+  left: 0;
+}
+.btn-75{
+  display: inline-flex;
+  position: absolute;
+  width: 75%;
+  height: 100%;
+  border-radius: 6px 0 0 6px;
+  background: var(--violet01);
+  opacity: 0.5;
+  left: 0;
+}
+.btn-100{
+  display: inline-flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  background: var(--violet01);
+  opacity: 0.5;
+  left: 0;
+}
+.contenedor0{
+  /*border: solid 1px aqua;*/
+  margin: 1em auto;
+  width: 100%;
+  min-height: 120px;
+  display: inline-flex;
+  background: var(--backcolor02);
+  box-shadow: 7px 10px 15px -1px rgba(0,0,0,0.79);
+}
+.contenedor1{
+  border-right: solid 1px var(--orange01);
+  position: relative;
+  text-align: center;
+  width: 90px;
+  padding: 1em 0 1em 0;
+  transition: 0.6s ease-in-out;
+}
+.contenedor1 p{
+  /*border: solid 1px darkcyan;*/
+  color: var(--violet01);
+  font-weight: 700;
+  font-size: larger;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  transform: rotate(-90deg);
+  transition: 0.1s;
+}
+.contenedor2{
+  /*border: solid 5px rebeccapurple;*/
+  position: relative;
+  align-self: center;
+  z-index: 0;
+}
+.progressbar li{
+  float: left;
+  list-style: none;
+  display: inline-flex;
+  position: relative;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: smaller;
+  font-weight: 600;
+  color: #d2d2d2;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 6px;
+  height: 40px;
+  margin: 10px;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+/*
+.progressbar li:after {
+  content: '';
+  background: var(--orange01);
+  height: 3px;
+  left: -50%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}*/
+/*
+.progressbar li:first-child:after {
+  content: none;
+}*/
+/*.progressbar li.active:after,
+.progressbar li.complete:after {
+  background: #3aac5d;
+}*/
+
+/*.progressbar li.active:before,
+.progressbar li.complete:before {
+  background: #3aac5d;
+  border-color: #3aac5d;
+  color: #fff;
+}*/
+.progressbar li.active {
+  color: #3aac5d;
+  font-family: 'Poppins', sans-serif;
+  font-size: medium;
+  font-weight: 800;
+}
+.progressbar li.complete {
+  color: black;
+}
+.progressbar li:hover{
+  color: coral;
+  box-shadow:
+  0px 0px 4px 0px #fff,
+  0px 0px 8px 3px var(--orange01),
+  0px 0px 16px 1px var(--violet01),
+  0px 0px 40px 1px var(--violet01);
+}
+.contenedor1:hover{
+  box-shadow: 0px 0px 8px 3px var(--orange01);
+  font-size: 1.09em;
+  text-shadow: 
+  #fff 0px 0px 2px,
+  var(--orange01) 0px 2px 8px,
+  var(--orange01) 0px 4px 10px,
+  var(--violet01) 0px -3px 8px,
+  var(--violet01) 0px -5px 10px;
+}
+
+@media screen and (max-width: 1093px){
+  .progressbar li:after {
+    content: none;
+  }
+}
+/*LENGUAJES*/
+
+
+/*LIBROS*/
+.textos{
+  border: solid 1px transparent;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.textos-child1{
+  /*border: solid 1px blue;*/
+  background-color: var(--backcolor02);
+  height: var(--bkaltura);
+  width: 240px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 2em;
+  /*display: block;*/
+  /*flex-direction: column;*/
+  box-shadow: 7px 10px 15px -1px rgba(0,0,0,0.79);
+}
+.textos-child1 p:nth-child(1){
+  /*border: solid 1px #3aac5d;*/
+  color: #ce5872;
+  text-align: center;
+  font-style: italic;
+  height: calc(var(--bkaltura)/2);
+}
+.textos-child1 p:nth-child(2){
+  /*border: solid 1px crimson;*/
+  color: #d4d4d4;
+  text-align: justify;
+  height: calc(var(--bkaltura)/4);
+}
+.textos-child1 p:nth-child(3){
+  /*border: solid 1px darkkhaki;*/
+  color: var(--orange01);
+  text-align: justify;
+  height: calc(var(--bkaltura)/4);
+}
+/*LIBROS*/
